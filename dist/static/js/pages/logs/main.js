@@ -1,1 +1,209 @@
-global.webpackJsonp([2],{"0xDb":function(t,n,e){"use strict";function a(t){var n=t.toString();return n[1]?n:"0"+n}function o(t){var n=t.getFullYear(),e=t.getMonth()+1,o=t.getDate(),i=t.getHours(),r=t.getMinutes(),s=t.getSeconds();return[n,e,o].map(a).join("/")+" "+[i,r,s].map(a).join(":")}n.a=o},"5HO/":function(t,n){},GbXl:function(t,n,e){"use strict";var a={render:function(){var t=this,n=t.$createElement,e=t._self._c||n;return e("div",{staticClass:"counter-warp"},[e("a",{staticClass:"home",attrs:{eventid:"0"},on:{click:function(n){t.gotoGame("pages/index/main")}}},[t._v("去往首页")]),t._v(" "),e("ul",{staticClass:"container log-list"},t._l(t.logs,function(t,n){return e("li",{key:n,staticClass:"log-item"},[e("card",{attrs:{text:n+1+" . "+t,mpcomid:"0-"+n}})],1)}))],1)},staticRenderFns:[]};n.a=a},HnWL:function(t,n,e){"use strict";var a=e("0xDb"),o=e("UCfo");n.a={components:{card:o.a},data:function(){return{logs:[]}},methods:{gotoGame:function(t){this.reLaunchPageTo(this.router+t)}},created:function(){var t=this.getStorageSync("logs")||[];this.logs=t.map(function(t){return Object(a.a)(new Date(t))})}}},WRn3:function(t,n,e){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var a=e("5nAL"),o=e.n(a),i=e("xqpF");new o.a(i.a).$mount(),n.default={config:{navigationBarTitleText:"查看启动日志"}}},xqpF:function(t,n,e){"use strict";var a=e("HnWL"),o=e("GbXl");var i=function(t){e("5HO/")},r=e("ybqe")(a.a,o.a,i,"data-v-12d7d1ff",null);n.a=r.exports}},["WRn3"]);
+global.webpackJsonp([2],{
+
+/***/ 114:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(115);
+
+
+
+var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_1__index__["a" /* default */]);
+app.$mount();
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  config: {
+    navigationBarTitleText: '查看启动日志'
+  }
+});
+
+/***/ }),
+
+/***/ 115:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_12d7d1ff_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(119);
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(116)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+
+/* template */
+
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-12d7d1ff"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_12d7d1ff_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "src/pages/logs/index.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] index.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-12d7d1ff", Component.options)
+  } else {
+    hotAPI.reload("data-v-12d7d1ff", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
+
+
+/***/ }),
+
+/***/ 116:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 117:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_index__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_card__ = __webpack_require__(41);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+  components: {
+    card: __WEBPACK_IMPORTED_MODULE_1__components_card__["a" /* default */]
+  },
+  data: function data() {
+    return {
+      logs: []
+    };
+  },
+
+  methods: {
+    gotoGame: function gotoGame(path) {
+      this.reLaunchPageTo(this.router + path);
+    }
+  },
+  created: function created() {
+    var logs = this.getStorageSync('logs') || [];
+    this.logs = logs.map(function (log) {
+      return Object(__WEBPACK_IMPORTED_MODULE_0__utils_index__["a" /* formatTime */])(new Date(log));
+    });
+  }
+});
+
+/***/ }),
+
+/***/ 118:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = formatTime;
+function formatNumber(n) {
+  var str = n.toString();
+  return str[1] ? str : '0' + str;
+}
+
+function formatTime(date) {
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1;
+  var day = date.getDate();
+
+  var hour = date.getHours();
+  var minute = date.getMinutes();
+  var second = date.getSeconds();
+
+  var t1 = [year, month, day].map(formatNumber).join('/');
+  var t2 = [hour, minute, second].map(formatNumber).join(':');
+
+  return t1 + ' ' + t2;
+}
+
+/* unused harmony default export */ var _unused_webpack_default_export = ({
+  formatNumber: formatNumber,
+  formatTime: formatTime
+});
+
+/***/ }),
+
+/***/ 119:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "counter-warp"
+  }, [_c('a', {
+    staticClass: "home",
+    attrs: {
+      "eventid": '0'
+    },
+    on: {
+      "click": function($event) {
+        _vm.gotoGame('pages/index/main')
+      }
+    }
+  }, [_vm._v("去往首页")]), _vm._v(" "), _c('ul', {
+    staticClass: "container log-list"
+  }, _vm._l((_vm.logs), function(log, index) {
+    return _c('li', {
+      key: index,
+      staticClass: "log-item"
+    }, [_c('card', {
+      attrs: {
+        "text": (index + 1) + ' . ' + log,
+        "mpcomid": '0-' + index
+      }
+    })], 1)
+  }))], 1)
+}
+var staticRenderFns = []
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-12d7d1ff", esExports)
+  }
+}
+
+/***/ })
+
+},[114]);
+//# sourceMappingURL=main.js.map

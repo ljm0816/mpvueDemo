@@ -1,0 +1,53 @@
+<template name="index$228fdc4f">
+  <view class="_div data-v-161afc18 index-warp">
+    <view class="_p data-v-161afc18 tit">广州公办小学查询系统</view>
+    <view style="margin: auto; background: #ffffff" class="_div data-v-161afc18">
+      <view class="_div data-v-161afc18 search">
+        <view class="_p data-v-161afc18 search-tit">所在地段或小学关键字：</view>
+        <view class="_div data-v-161afc18 search-panel">
+          <input class="_input data-v-161afc18 search-input" value="{{keyword}}" bindinput="handleProxy" type="text" placeholder="如：天河南街" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+        </view>
+        <view class="_div data-v-161afc18 btn-panel">
+          <button class="_button data-v-161afc18 search-btn" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">搜索学校</button>
+        </view>
+      </view>
+      <view class="_div data-v-161afc18 instructions" wx:if="{{showInstructions}}">
+        <view style="font-weight: bold;" class="_p data-v-161afc18">使用说明：</view>
+        <view class="_div data-v-161afc18 content">
+          <view class="_ol data-v-161afc18">
+            <view class="_li data-v-161afc18">在上方搜索框中输入您所在的地段关键字或者您想查询的小学名称，如前进小学、天河南街。</view>
+            <view class="_li data-v-161afc18">点击“搜索学校”按钮，进入结果页面。</view>
+            <view class="_li data-v-161afc18">系统由广东广播电视台房产频道整理。</view>
+            <view class="_li data-v-161afc18">如有错误，请通过
+              <navigator url="http://h5.kanlouyi.com/app#/proposal" style="color: #ff6600" class="_a data-v-161afc18">意见反馈</navigator>告知我们，非常感谢！</view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-161afc18 result-panel" wx:else>
+        <view class="_div data-v-161afc18 table table-striped" wx:if="{{schoolList.length > 0}}">
+          <view class="_div data-v-161afc18 tr">
+            <view class="_div data-v-161afc18 th" width="60">辖区</view>
+            <view class="_div data-v-161afc18 th" width="60">学校</view>
+            <view class="_div data-v-161afc18 th flexdiv">招生服务地段</view>
+          </view>
+          <view class="_div data-v-161afc18 tr" wx:key="item.id" key="{{item.id}}" wx:for="{{schoolList}}" wx:for-index="index" wx:for-item="item">
+            <view class="_div data-v-161afc18 td">{{item.region}}</view>
+            <view class="_div data-v-161afc18 td">{{item.school_name}}</view>
+            <view class="_div data-v-161afc18 td flexdiv">
+              <view class="_ul data-v-161afc18">
+                <view wx:key="sectionItem" key="{{sectionItem}}" wx:for="{{item.section}}" wx:for-index="sectionItemIndex" wx:for-item="sectionItem" class="_li data-v-161afc18">{{sectionItem}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view style="font-weight: bold" wx:else class="_p data-v-161afc18">数据库中无对应记录{{schoolList.length}}</view>
+        <view class="_div data-v-161afc18 result-btn-panel" wx:if="{{schoolList.length > 0}}">
+          <button class="_button data-v-161afc18 back" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">返回首页</button>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-161afc18 footer">
+      <label class="_span data-v-161afc18">广东广播电视台房产频道@版权所有</label>
+    </view>
+  </view>
+</template>

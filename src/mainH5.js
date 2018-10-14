@@ -8,14 +8,29 @@ import wxService from './api/wxService'
 import httpService from './api/httpService'
 import store from './store'
 
+import API from './common/api.js'
+import http from './common/http.js'
+import util from './common/util.js'
+
+// 设置api为全局变量
+Vue.use(API)
+Vue.use(http)
+
+// 把工具函数定义为全局
+Vue.prototype.util = util
+
 Vue.config.productionTip = false
 Vue.use(Vuex)
+
+window.env = 'other'
+
 Vue.mixin({
   data () {
     return {
       service: '', // 服务
       router: '/', // 路由路径
-      imgSrc: '' // 图片路径
+      imgSrc: '' ,// 图片路径
+      env: 'other'
     }
   },
   methods: {
